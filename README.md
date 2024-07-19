@@ -5,10 +5,10 @@ A full-stack project to create a cycling routes review application where users c
 Upload and review a cycling route NOW!
 
 - Signup and login to your account
-- Go through all the campsites and find them on the map
-- Review the campsites
-- Create a new campsite
-- Edit and delete the campsite or review you create
+- Go through all the cycling routes and find them on the map
+- Review the cycling routes
+- Create new cycling routes
+- Edit and delete the cycling routes or review that you created
 
 ## Prerequisites
 Make sure you have the following installed on your machine:
