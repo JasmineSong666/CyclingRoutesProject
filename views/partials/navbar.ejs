@@ -1,0 +1,26 @@
+<nav class="navbar sticky-top navbar-expand-lg" style="background-color: rgb(48, 48, 77);">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#" style="color: white;">CyclingRoutes</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link" aria-current="page" href="/" style="color: white;">Home</a>
+                <a class="nav-link" href="/cyclingroutes" style="color: white;">Routes</a>
+                <a class="nav-link" href="/cyclingroutes/new" style="color: white;">New Route</a>
+            </div>
+            <div class="navbar-nav ms-auto">
+                <% if(!currentUser){ %>
+                    <a class="nav-link" href="/login" style="color: white;">Login</a>
+                    <a class="nav-link" href="/register" style="color: white;">Register</a>
+                    <% } else {%>
+                        <form action="/logout" method="post">
+                            <button class="nav-link btn-outline-light border-0 link-like" style="color: white;">Logout</button>
+                        </form>
+                        <% } %>
+            </div>
+        </div>
+    </div>
+</nav>
